@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49677F0E25780B8E00CB4904 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49677F0D25780B8E00CB4904 /* HTTPClient.swift */; };
+		49677F1025780BC800CB4904 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49677F0F25780BC800CB4904 /* APIError.swift */; };
+		49677F18257813C700CB4904 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49677F17257813C700CB4904 /* AppCoordinator.swift */; };
+		49E909FD257804170090A540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E909FC257804170090A540 /* AppDelegate.swift */; };
+		49E909FF257804170090A540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E909FE257804170090A540 /* SceneDelegate.swift */; };
+		49E90A062578041A0090A540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E90A052578041A0090A540 /* Assets.xcassets */; };
+		49E90A092578041A0090A540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49E90A072578041A0090A540 /* LaunchScreen.storyboard */; };
+		49E90A1E257809FD0090A540 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90A1C257809FD0090A540 /* SignUpViewController.swift */; };
+		49E90A1F257809FD0090A540 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E90A1D257809FD0090A540 /* SignUpViewController.xib */; };
+		49E90A2425780A5E0090A540 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E90A2225780A5E0090A540 /* FeedViewController.swift */; };
+		49E90A2525780A5E0090A540 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E90A2325780A5E0090A540 /* FeedViewController.xib */; };
+		9A01D8B6258A6DE70071EAD2 /* DogList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01D8B5258A6DE70071EAD2 /* DogList.swift */; };
+		9A01D8BB258A73490071EAD2 /* DogServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01D8BA258A73490071EAD2 /* DogServices.swift */; };
+		D9BD69BDEF9C9FD2A8158DF7 /* Pods_iddog_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49677F0D25780B8E00CB4904 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		49677F0F25780BC800CB4904 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		49677F17257813C700CB4904 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		49E909F9257804170090A540 /* iddog-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iddog-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E909FC257804170090A540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49E909FE257804170090A540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		49E90A052578041A0090A540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49E90A082578041A0090A540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49E90A0A2578041A0090A540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E90A1C257809FD0090A540 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		49E90A1D257809FD0090A540 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		49E90A2225780A5E0090A540 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		49E90A2325780A5E0090A540 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
+		577144B8BF4A60445C5CEDA8 /* Pods-iddog-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iOS.debug.xcconfig"; path = "Target Support Files/Pods-iddog-iOS/Pods-iddog-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7F93030DECC1B13F96E44094 /* Pods-iddog-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iOS.release.xcconfig"; path = "Target Support Files/Pods-iddog-iOS/Pods-iddog-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9A01D8B5258A6DE70071EAD2 /* DogList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogList.swift; sourceTree = "<group>"; };
+		9A01D8BA258A73490071EAD2 /* DogServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogServices.swift; sourceTree = "<group>"; };
+		F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49E909F6257804170090A540 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9BD69BDEF9C9FD2A8158DF7 /* Pods_iddog_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49677F0C25780B6400CB4904 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				49677F0D25780B8E00CB4904 /* HTTPClient.swift */,
+				9A01D8BA258A73490071EAD2 /* DogServices.swift */,
+				49677F0F25780BC800CB4904 /* APIError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		49E909F0257804170090A540 = {
+			isa = PBXGroup;
+			children = (
+				49E909FB257804170090A540 /* iddog-iOS */,
+				49E909FA257804170090A540 /* Products */,
+				B527E1DEBDAF8275CCC901CA /* Pods */,
+				E3E386C1ECED8A7392720B65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		49E909FA257804170090A540 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49E909F9257804170090A540 /* iddog-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49E909FB257804170090A540 /* iddog-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9A01D8B4258A6DCA0071EAD2 /* Model */,
+				49677F0C25780B6400CB4904 /* Networking */,
+				49E90A2A25780AA00090A540 /* Resources */,
+				49E90A2925780A960090A540 /* Feed */,
+				49E90A2825780A8C0090A540 /* SignUp */,
+				49E90A2725780A840090A540 /* Application */,
+			);
+			path = "iddog-iOS";
+			sourceTree = "<group>";
+		};
+		49E90A2725780A840090A540 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				49E909FC257804170090A540 /* AppDelegate.swift */,
+				49E909FE257804170090A540 /* SceneDelegate.swift */,
+				49677F17257813C700CB4904 /* AppCoordinator.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		49E90A2825780A8C0090A540 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				49E90A1C257809FD0090A540 /* SignUpViewController.swift */,
+				49E90A1D257809FD0090A540 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		49E90A2925780A960090A540 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				49E90A2225780A5E0090A540 /* FeedViewController.swift */,
+				49E90A2325780A5E0090A540 /* FeedViewController.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		49E90A2A25780AA00090A540 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49E90A052578041A0090A540 /* Assets.xcassets */,
+				49E90A072578041A0090A540 /* LaunchScreen.storyboard */,
+				49E90A0A2578041A0090A540 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A01D8B4258A6DCA0071EAD2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A01D8B5258A6DE70071EAD2 /* DogList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B527E1DEBDAF8275CCC901CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				577144B8BF4A60445C5CEDA8 /* Pods-iddog-iOS.debug.xcconfig */,
+				7F93030DECC1B13F96E44094 /* Pods-iddog-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E3E386C1ECED8A7392720B65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49E909F8257804170090A540 /* iddog-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49E90A0D2578041A0090A540 /* Build configuration list for PBXNativeTarget "iddog-iOS" */;
+			buildPhases = (
+				A0897E464ACD3E81745D280C /* [CP] Check Pods Manifest.lock */,
+				49E909F5257804170090A540 /* Sources */,
+				49E909F6257804170090A540 /* Frameworks */,
+				49E909F7257804170090A540 /* Resources */,
+				9BC4935EC00A03D9A5AD6B7E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iddog-iOS";
+			productName = "iddog-iOS";
+			productReference = 49E909F9257804170090A540 /* iddog-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49E909F1257804170090A540 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					49E909F8257804170090A540 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 49E909F4257804170090A540 /* Build configuration list for PBXProject "iddog-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49E909F0257804170090A540;
+			productRefGroup = 49E909FA257804170090A540 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49E909F8257804170090A540 /* iddog-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49E909F7257804170090A540 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E90A092578041A0090A540 /* LaunchScreen.storyboard in Resources */,
+				49E90A1F257809FD0090A540 /* SignUpViewController.xib in Resources */,
+				49E90A2525780A5E0090A540 /* FeedViewController.xib in Resources */,
+				49E90A062578041A0090A540 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BC4935EC00A03D9A5AD6B7E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog-iOS/Pods-iddog-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog-iOS/Pods-iddog-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iddog-iOS/Pods-iddog-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0897E464ACD3E81745D280C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iddog-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49E909F5257804170090A540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49E90A1E257809FD0090A540 /* SignUpViewController.swift in Sources */,
+				9A01D8BB258A73490071EAD2 /* DogServices.swift in Sources */,
+				49677F0E25780B8E00CB4904 /* HTTPClient.swift in Sources */,
+				49E909FD257804170090A540 /* AppDelegate.swift in Sources */,
+				49E90A2425780A5E0090A540 /* FeedViewController.swift in Sources */,
+				49E909FF257804170090A540 /* SceneDelegate.swift in Sources */,
+				49677F1025780BC800CB4904 /* APIError.swift in Sources */,
+				9A01D8B6258A6DE70071EAD2 /* DogList.swift in Sources */,
+				49677F18257813C700CB4904 /* AppCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49E90A072578041A0090A540 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49E90A082578041A0090A540 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49E90A0B2578041A0090A540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49E90A0C2578041A0090A540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49E90A0E2578041A0090A540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 577144B8BF4A60445C5CEDA8 /* Pods-iddog-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96576CZ92S;
+				INFOPLIST_FILE = "iddog-iOS/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.idwall.iddog-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49E90A0F2578041A0090A540 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F93030DECC1B13F96E44094 /* Pods-iddog-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 96576CZ92S;
+				INFOPLIST_FILE = "iddog-iOS/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "co.idwall.iddog-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49E909F4257804170090A540 /* Build configuration list for PBXProject "iddog-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E90A0B2578041A0090A540 /* Debug */,
+				49E90A0C2578041A0090A540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49E90A0D2578041A0090A540 /* Build configuration list for PBXNativeTarget "iddog-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49E90A0E2578041A0090A540 /* Debug */,
+				49E90A0F2578041A0090A540 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49E909F1257804170090A540 /* Project object */;
+}
