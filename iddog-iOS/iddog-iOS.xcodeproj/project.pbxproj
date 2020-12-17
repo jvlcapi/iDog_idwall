@@ -22,6 +22,7 @@
 		9A01D8BB258A73490071EAD2 /* DogServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01D8BA258A73490071EAD2 /* DogServices.swift */; };
 		9A01D8C2258B90A80071EAD2 /* DogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A01D8C1258B90A80071EAD2 /* DogCell.xib */; };
 		9A01D8C5258B916F0071EAD2 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01D8C4258B916F0071EAD2 /* DogCell.swift */; };
+		9AA85B5B258BA098009F2FCA /* UIImageView+AFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA85B5A258BA098009F2FCA /* UIImageView+AFNetworking.swift */; };
 		D9BD69BDEF9C9FD2A8158DF7 /* Pods_iddog_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		9A01D8BA258A73490071EAD2 /* DogServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogServices.swift; sourceTree = "<group>"; };
 		9A01D8C1258B90A80071EAD2 /* DogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogCell.xib; sourceTree = "<group>"; };
 		9A01D8C4258B916F0071EAD2 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
+		9AA85B5A258BA098009F2FCA /* UIImageView+AFNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AFNetworking.swift"; sourceTree = "<group>"; };
 		F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 			children = (
 				49E90A052578041A0090A540 /* Assets.xcassets */,
 				49E90A072578041A0090A540 /* LaunchScreen.storyboard */,
+				9AA85B5A258BA098009F2FCA /* UIImageView+AFNetworking.swift */,
 				49E90A0A2578041A0090A540 /* Info.plist */,
 			);
 			path = Resources;
@@ -299,6 +302,7 @@
 				49677F1025780BC800CB4904 /* APIError.swift in Sources */,
 				9A01D8B6258A6DE70071EAD2 /* DogList.swift in Sources */,
 				9A01D8C5258B916F0071EAD2 /* DogCell.swift in Sources */,
+				9AA85B5B258BA098009F2FCA /* UIImageView+AFNetworking.swift in Sources */,
 				49677F18257813C700CB4904 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

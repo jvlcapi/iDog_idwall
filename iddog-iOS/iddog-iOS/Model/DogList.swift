@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DogList: Codable{
+class DogList: Codable {
     let category: String
     let list: [String]
 }
