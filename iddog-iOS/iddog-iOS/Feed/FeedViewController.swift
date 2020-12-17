@@ -7,6 +7,14 @@ class FeedViewController: UIViewController {
     
     var dogList: DogList? = nil
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.fetchDogs(category: "husky")
+    }
+}
+
+//MARK: Network layer calls
+extension FeedViewController {
     fileprivate func fetchDogs(category: String){
         DogServices.fetchDogs(category: category) { [weak self] (result: Result<DogList, APIError>) -> (Void) in
             
@@ -22,11 +30,6 @@ class FeedViewController: UIViewController {
             }
         }
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.fetchDogs(category: "husky")
-    }
 }
 
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
@@ -35,8 +38,11 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "DogCell", for: indexPath) as? DogCell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "DogCell", for: indexPath) as? DogCell {
+            
+            
+            return cell
+        }
+        return UITableViewCell()
     }
-    
-    
 }

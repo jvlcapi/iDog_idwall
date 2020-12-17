@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
+            <connections>
+                <outlet property="dogImageView" destination="fKg-YB-8hI" id="Mg6-wU-bta"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DogCell" id="eAH-b6-fzs" customClass="DogCell" customModule="iddog_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eAH-b6-fzs" id="4uV-sY-tfE">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fKg-YB-8hI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fKg-YB-8hI" firstAttribute="top" secondItem="4uV-sY-tfE" secondAttribute="top" id="hyx-Zx-hQf"/>
+                    <constraint firstItem="fKg-YB-8hI" firstAttribute="leading" secondItem="4uV-sY-tfE" secondAttribute="leading" id="nWU-ct-XQh"/>
+                    <constraint firstAttribute="bottom" secondItem="fKg-YB-8hI" secondAttribute="bottom" id="noW-BP-Rcn"/>
+                    <constraint firstAttribute="trailing" secondItem="fKg-YB-8hI" secondAttribute="trailing" id="plG-6O-shk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dogImageView" destination="fKg-YB-8hI" id="cfh-jR-GlZ"/>
+            </connections>
+            <point key="canvasLocation" x="-58" y="-200"/>
+        </tableViewCell>
+    </objects>
+</document>
