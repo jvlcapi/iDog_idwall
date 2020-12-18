@@ -23,6 +23,8 @@
 		9A01D8C2258B90A80071EAD2 /* DogCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A01D8C1258B90A80071EAD2 /* DogCell.xib */; };
 		9A01D8C5258B916F0071EAD2 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A01D8C4258B916F0071EAD2 /* DogCell.swift */; };
 		9AA85B5B258BA098009F2FCA /* UIImageView+AFNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA85B5A258BA098009F2FCA /* UIImageView+AFNetworking.swift */; };
+		9AA85B65258BB5E6009F2FCA /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA85B64258BB5E6009F2FCA /* AuthServices.swift */; };
+		9AA85B68258BBCF8009F2FCA /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA85B67258BBCF8009F2FCA /* Token.swift */; };
 		D9BD69BDEF9C9FD2A8158DF7 /* Pods_iddog_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		9A01D8C1258B90A80071EAD2 /* DogCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogCell.xib; sourceTree = "<group>"; };
 		9A01D8C4258B916F0071EAD2 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
 		9AA85B5A258BA098009F2FCA /* UIImageView+AFNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+AFNetworking.swift"; sourceTree = "<group>"; };
+		9AA85B64258BB5E6009F2FCA /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		9AA85B67258BBCF8009F2FCA /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		F88EC63F541F2B113397BEB7 /* Pods_iddog_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,6 +71,7 @@
 			children = (
 				49677F0D25780B8E00CB4904 /* HTTPClient.swift */,
 				9A01D8BA258A73490071EAD2 /* DogServices.swift */,
+				9AA85B64258BB5E6009F2FCA /* AuthServices.swift */,
 				49677F0F25780BC800CB4904 /* APIError.swift */,
 			);
 			path = Networking;
@@ -147,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				9A01D8B5258A6DE70071EAD2 /* DogList.swift */,
+				9AA85B67258BBCF8009F2FCA /* Token.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 				49E90A1E257809FD0090A540 /* SignUpViewController.swift in Sources */,
 				9A01D8BB258A73490071EAD2 /* DogServices.swift in Sources */,
 				49677F0E25780B8E00CB4904 /* HTTPClient.swift in Sources */,
+				9AA85B65258BB5E6009F2FCA /* AuthServices.swift in Sources */,
 				49E909FD257804170090A540 /* AppDelegate.swift in Sources */,
 				49E90A2425780A5E0090A540 /* FeedViewController.swift in Sources */,
 				49E909FF257804170090A540 /* SceneDelegate.swift in Sources */,
@@ -303,6 +310,7 @@
 				9A01D8B6258A6DE70071EAD2 /* DogList.swift in Sources */,
 				9A01D8C5258B916F0071EAD2 /* DogCell.swift in Sources */,
 				9AA85B5B258BA098009F2FCA /* UIImageView+AFNetworking.swift in Sources */,
+				9AA85B68258BBCF8009F2FCA /* Token.swift in Sources */,
 				49677F18257813C700CB4904 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,9 +14,8 @@ class FeedViewController: UIViewController {
     }
 }
 
-//MARK: Network layer calls
+//MARK: Network layer functions
 extension FeedViewController {
-    
     
     fileprivate func fetchDogs(category: String){
         DogServices.fetchDogs(category: category) {

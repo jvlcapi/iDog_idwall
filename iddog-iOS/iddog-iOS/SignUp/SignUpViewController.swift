@@ -1,4 +1,5 @@
 import UIKit
+import Alamofire
 
 class SignUpViewController: UIViewController {
     weak var delegate: SignUpViewControllerDelegate?
@@ -28,8 +29,15 @@ class SignUpViewController: UIViewController {
 
     @IBAction func signUp(_ sender: UIButton) {
         delegate?.signUpViewControllerDidSignUp(self)
+        
     }
 }
+
+//MARK: Net
+extension SignUpViewController{
+    
+}
+
 
 protocol SignUpViewControllerDelegate: AnyObject {
     func signUpViewControllerDidSignUp(_ viewController: SignUpViewController)
