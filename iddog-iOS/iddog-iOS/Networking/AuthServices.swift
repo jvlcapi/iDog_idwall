@@ -11,7 +11,8 @@ import Alamofire
 class AuthServices {
     
     static func signUp( email: String,
-                        escToken: @escaping (Swift.Result<SignUpToken, APIError>) -> (Void)){
+                        escToken: @escaping (Swift.Result<SignUpToken, APIError>) -> (Void))
+    {
 
         HTTPClient.request(path: "signup", method: .post, parameters: ["email": email] ,encoding: JSONEncoding()) {
 

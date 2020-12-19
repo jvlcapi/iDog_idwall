@@ -5,6 +5,8 @@ class SignUpViewController: UIViewController {
     weak var delegate: SignUpViewControllerDelegate?
     @IBOutlet private weak var emailTextField: UITextField!
     @IBOutlet private weak var signUpButton: UIButton!
+    
+//    var signUpToken: SignUpToken? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,17 +30,41 @@ class SignUpViewController: UIViewController {
     }
 
     @IBAction func signUp(_ sender: UIButton) {
-        delegate?.signUpViewControllerDidSignUp(self)
+        delegate?.askForAuthorization(email: self.emailTextField.text ?? "someDefaultEmailForTesting")
+        
+        if let delegateAsCoordinator = delegate as? AppCoordinator {
+            guard let token = delegateAsCoordinator.authToken else {print("token==nil");return}
+            delegate?.signUpViewControllerDidSignUp(self, authToken: token)
+        }
         
     }
 }
 
-//MARK: Net
-extension SignUpViewController{
-    
-}
+////MARK: Network layer functions
+//extension SignUpViewController{
+//    fileprivate func askForAuthorization(email: String){
+//
+//        AuthServices.signUp(email: email) {
+//            [weak self]
+//            (result : Result<SignUpToken, APIError>) -> (Void) in
+//
+//            switch result {
+//
+//            case .success(let signUpToken):
+//                self?.signUpToken = signUpToken
+//
+//            case .failure(let error):
+//                //TODO: treat error
+//                print(error)
+//            }
+//        }
+//    }
+//}
 
 
 protocol SignUpViewControllerDelegate: AnyObject {
-    func signUpViewControllerDidSignUp(_ viewController: SignUpViewController)
+    
+    func signUpViewControllerDidSignUp(_ viewController: SignUpViewController, authToken: SignUpToken)
+    
+    func askForAuthorization(email: String)
 }

@@ -5,20 +5,25 @@ class FeedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    var authorizationToken: SignUpToken? = nil
     var dogList: DogList? = nil
+    
     var dogsImageViewsArray: [UIImageView] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.fetchDogs(category: "husky")
+        
+        if let authorized = authorizationToken?.key{
+            self.fetchDogs(category: "husky", tokenKey: authorized)
+        }
     }
 }
 
 //MARK: Network layer functions
 extension FeedViewController {
     
-    fileprivate func fetchDogs(category: String){
-        DogServices.fetchDogs(category: category) {
+    fileprivate func fetchDogs(category: String, tokenKey: String){
+        DogServices.fetchDogs(category: category, tokenKey: tokenKey) {
             [weak self]
             (result: Result<DogList, APIError>) -> (Void) in
             

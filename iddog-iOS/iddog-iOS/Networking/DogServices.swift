@@ -11,9 +11,10 @@ import Alamofire
 
 class DogServices {
     static func fetchDogs(category: String,
+                          tokenKey: String,
                           escDogList: @escaping (Swift.Result<DogList, APIError>) -> (Void)){
         
-        HTTPClient.request(path: "feed", method: .get, parameters: ["category": category], encoding: URLEncoding()) {
+        HTTPClient.request(path: "feed", method: .get, parameters: ["category": category], encoding: URLEncoding(), headers: [.authorization(bearerToken: tokenKey)]) {
             
             (result: Result<DogList, APIError>) -> (Void) in
             
